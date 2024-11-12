@@ -6,13 +6,13 @@ on:
       -main
 
 env:
-  AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secret.AWS_SECRET_ACCESS_KEY }}
-  TF_VAR_DO_TOKEN: ${{ secret.DO_TOKEN }}
-  TF_VAR_MYSQL_DB: ${{ secret.MYSQL_DB }}
-  TF_VAR_MYSQL_HOST: ${{ secret.MYSQL_HOST }}
-  TF_VAR_MYSQL_PASSWORD: ${{ secret.MYSQL_PASSWORD }}
-  TF_VAR_MYSQL_USER: ${{ secret.MYSQL_USER }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  TF_VAR_DO_TOKEN: ${{ secrets.DO_TOKEN }}
+  TF_VAR_MYSQL_DB: ${{ secrets.MYSQL_DB }}
+  TF_VAR_MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
+  TF_VAR_MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+  TF_VAR_MYSQL_USER: ${{ secrets.MYSQL_USER }}
 
 jobs:
   terraform-apply:
