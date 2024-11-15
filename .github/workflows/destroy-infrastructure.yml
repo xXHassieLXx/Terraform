@@ -1,4 +1,4 @@
-name: Deploy Hassiel Server 
+name: Destroy Hassiel Server 
 
 on:
   workflow_dispatch:
