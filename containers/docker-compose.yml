@@ -2,7 +2,7 @@ services:
   reverse-proxy:
     image: nginxproxy/nginx-proxy:alpine
     container_name: 'Reverse-proxy'
-    restar: always
+    restart: always
     ports: 
       - 80:80
       - 443:443
@@ -19,7 +19,7 @@ services:
   lets-encrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion
     container_name: 'Lets-Encrypt'
-    restar: always
+    restart: always
     environment:
       - NGINX_PROXY_CONTAINER=Reverse-proxy
       - /volumes/nginx/certs:/etc/nginx/certs
