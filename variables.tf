@@ -18,9 +18,8 @@ variable "MYSQL_USER" {
     type = string
 }
 
-
 variable "DOMAIN" {
-  type = string
+    type = string
 }
 
 variable "USER_EMAIL" {
