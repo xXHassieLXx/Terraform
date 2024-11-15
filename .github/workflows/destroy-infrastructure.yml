@@ -14,6 +14,8 @@ env:
   TF_VAR_DOMAIN: ${{ secrets.DOMAIN }}
   TF_VAR_USER_EMAIL: ${{ secrets.USER_EMAIL }}
 
+
+#####3
 jobs:
   terraform-apply:
     runs-on: ubuntu-latest
